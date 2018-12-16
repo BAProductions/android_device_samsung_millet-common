@@ -17,9 +17,6 @@
 
 SUB_DEVICE_PATH := device/samsung/millet-common
 
-# Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(SUB_DEVICE_PATH)/bluetooth
-
 # Init
 TARGET_LIBINIT_MSM8226_DEFINES_FILE := device/samsung/millet-common/init/init_millet.cpp
 TARGET_UNIFIED_DEVICE := true
