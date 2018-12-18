@@ -12,14 +12,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Proprietary files
-$(call inherit-product, vendor/samsung/millet-common/millet-common-vendor.mk)
+# inherit from common msm8226
+-include device/samsung/msm8226-common/msm8226.mk
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 PRODUCT_CHARACTERISTICS := tablet
 
 # System properties
+TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
 -include $(LOCAL_PATH)/system_prop.mk
 
 # Permissions
@@ -58,5 +59,5 @@ PRODUCT_COPY_FILES += \
     kernel/samsung/msm8226/drivers/staging/prima/firmware_bin/WCNSS_qcom_cfg.ini:system/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
 
-# Inherit from qcom-common
-$(call inherit-product, device/samsung/msm8226-common/msm8226.mk)
+# Proprietary files
+$(call inherit-product, vendor/samsung/millet-common/millet-common-vendor.mk)
