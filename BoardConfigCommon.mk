@@ -49,3 +49,8 @@ TARGET_PROVIDES_LIBLIGHT := true
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(SUB_DEVICE_PATH)/rootdir/etc/fstab.qcom
+
+# Properties (reset them here, include more in device if needed)
+
+TARGET_SYSTEM_PROP := device/samsung/millet-common/system.prop
+-include $(LOCAL_PATH)/system_prop.mk
