@@ -15,6 +15,8 @@
 # inherit from common msm8226
 -include device/samsung/msm8226-common/msm8226.mk
 
+LOCAL_PATH := device/samsung/millet-common
+
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 PRODUCT_CHARACTERISTICS := tablet
