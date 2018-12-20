@@ -179,7 +179,7 @@ cameradata/datapattern_front_420sp.yuv
 # DRM
 bin/qseecomd
 lib/drm/libdrmwvmplugin.so
-lib/libdrmdecrypt.so
+#lib/libdrmdecrypt.so
 lib/libwvm.so
 vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib/libdrmdiag.so
@@ -188,7 +188,7 @@ vendor/lib/libdrmtime.so
 vendor/lib/libQSEEComAPI.so
 vendor/lib/librpmb.so
 vendor/lib/libssd.so
-vendor/lib/libwvdrm_L1.so
+#svendor/lib/libwvdrm_L1.so
 vendor/lib/libWVStreamControlAPI_L1.so
 
 # CNE
@@ -282,6 +282,7 @@ vendor/lib/libthermalioctl.so
 # Time services
 app/TimeService/TimeService.apk
 bin/time_daemon
+-vendor/lib/libtime_genoff.so
 vendor/lib/libTimeService.so
 
 # WFD
