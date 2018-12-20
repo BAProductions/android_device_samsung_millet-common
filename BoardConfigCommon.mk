@@ -36,6 +36,10 @@ TARGET_KERNEL_CONFIG := msm8226-sec_defconfig
 TARGET_KERNEL_SELINUX_CONFIG := selinux_defconfig
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 
+# Init
+TARGET_INIT_VENDOR_LIB := init_millet
+TARGET_RECOVERY_DEVICE_MODULES := init_millet
+TARGET_UNIFIED_DEVICE := true
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
