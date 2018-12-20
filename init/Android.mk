@@ -13,14 +13,14 @@
 # GNU General Public License for more details.
 #
 
-ifeq ($(TARGET_INIT_VENDOR_LIB),libinit_sec)
+ifeq ($(TARGET_INIT_VENDOR_LIB),init_millet)
 
 LOCAL_PATH := $(call my-dir)
 LIBINIT_SEC_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
-#LOCAL_MODULE_TAGS := optional
-#LOCAL_C_INCLUDES := system/core/init system/core/healthd bootable/recovery
+LOCAL_MODULE_TAGS := optional
+LOCAL_C_INCLUDES := system/core/init system/core/healthd bootable/recovery
 
 LOCAL_CFLAGS := -Wall -DANDROID_TARGET=\"$(TARGET_BOARD_PLATFORM)\"
 LOCAL_SRC_FILES := init_millet.cpp
