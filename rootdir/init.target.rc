@@ -25,6 +25,11 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 on boot
+
+    # Graphic idle Permission for sys nodes
+    chown system graphics /sys/devices/virtual/graphics/fb0/idle_time
+    chmod 0664 /sys/devices/virtual/graphics/fb0/idle_time
+
     #Accelerometer-BMA254
     chown system input /sys/class/input/input3/data
     chown system input /sys/class/input/input3/delay
